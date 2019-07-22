@@ -41,7 +41,7 @@ html .container header nav a:hover {
   }
 }
 html .container main {
-  background: url(images/greyscale-niagara.jpg) no-repeat center center fixed;
+  background-image: url("images/greyscale-niagara.jpg");
   border-radius: 24px;
   height: 68rem;
   display: flex;
@@ -77,26 +77,8 @@ html .container main h2 {
   }
 }
 html .container footer nav {
-  display: flex;
-  justify-content: space-evenly;
-  margin-top: 25px;
-  margin-bottom: 10px;
   width: 100%;
-}
-@media (max-width: 800px) {
-  html .container footer nav {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
-  }
-}
-html .container footer nav a {
-  text-decoration: none;
-  color: #252C2E;
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-}
-html .container footer nav a:hover {
-  border-bottom: 2px solid #252C2E;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
