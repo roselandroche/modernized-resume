@@ -1,4 +1,4 @@
-@mobile: ~"(max-width: 500px)"; 
+@mobile: ~"(max-width: 500px)";
 @tablet: ~"(max-width: 800px)";
 
 .nav-class() {
@@ -58,7 +58,8 @@ html {
       }
     }
     main {
-      background-image: url("images/greyscale-niagara.jpg"); 
+      background: url("https://images.unsplash.com/photo-1502297260054-f0f4c7e27ad8?ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80") no-repeat center;
+      background-size: cover;
       border-radius: 24px;
       height: 68rem;
       display: flex;
@@ -73,7 +74,7 @@ html {
 
       h1 {
         font-family: 'Droid Serif', Georgia, Times, serif;
-        font-size: 6rem;
+        font-size: 4.8rem;
         
         @media @mobile {
           font-size: 3.6rem;
@@ -94,15 +95,14 @@ html {
     footer {
 
       nav {
+        .nav-class();
         width: 100%;
-        display: flex;
-        justify-content: center;
-        align-content: center;
         
         a {
+          .a-class();
           
-        } 
       }
     }
   }
+}
 }
