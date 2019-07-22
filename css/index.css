@@ -1,15 +1,144 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 html {
   font-size: 62.5%;
 }
 html .container {
   width: 100%;
   font-family: 'Droid Sans', Helvetica, Arial, sans-serif;
+  max-height: 100vh;
 }
 html .container header nav {
   display: flex;
   justify-content: space-evenly;
-  margin-top: 25px;
-  margin-bottom: 10px;
+  align-items: center;
+  height: 10vh;
 }
 @media (max-width: 800px) {
   html .container header nav {
@@ -23,7 +152,6 @@ html .container header nav a {
   text-decoration: none;
   color: #252C2E;
   font-size: 1.5rem;
-  margin-bottom: 10px;
 }
 html .container header nav a:hover {
   border-bottom: 2px solid #252C2E;
@@ -44,7 +172,7 @@ html .container main {
   background: url("https://images.unsplash.com/photo-1502297260054-f0f4c7e27ad8?ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80") no-repeat center;
   background-size: cover;
   border-radius: 24px;
-  height: 68rem;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -80,9 +208,9 @@ html .container main h2 {
 html .container footer nav {
   display: flex;
   justify-content: space-evenly;
-  margin-top: 25px;
-  margin-bottom: 10px;
+  align-items: center;
   width: 100%;
+  height: 10vh;
 }
 @media (max-width: 800px) {
   html .container footer nav {
@@ -96,7 +224,6 @@ html .container footer nav a {
   text-decoration: none;
   color: #252C2E;
   font-size: 1.5rem;
-  margin-bottom: 10px;
 }
 html .container footer nav a:hover {
   border-bottom: 2px solid #252C2E;
