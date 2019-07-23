@@ -138,7 +138,7 @@ html .container header nav {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  height: 10vh;
+  height: 7vh;
 }
 @media (max-width: 800px) {
   html .container header nav {
@@ -172,7 +172,7 @@ html .container main {
   background: url("https://images.unsplash.com/photo-1502297260054-f0f4c7e27ad8?ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80") no-repeat center;
   background-size: cover;
   border-radius: 24px;
-  height: 80vh;
+  height: 86vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -186,7 +186,8 @@ html .container main {
 }
 html .container main h1 {
   font-family: 'Droid Serif', Georgia, Times, serif;
-  font-size: 4.8rem;
+  font-size: 6rem;
+  margin-bottom: 5rem;
 }
 @media (max-width: 500px) {
   html .container main h1 {
@@ -209,8 +210,8 @@ html .container footer nav {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  height: 7vh;
   width: 100%;
-  height: 10vh;
 }
 @media (max-width: 800px) {
   html .container footer nav {
